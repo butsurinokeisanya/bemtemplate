@@ -11,7 +11,7 @@
 bemtemplate は LaTeX スライドドキュメントクラス Beamer のテンプレートファイルである. 一般的な Beamer の記法に加えて tex2mp4 のための特殊なコメントアウト "%!" が記載されている. tex2mp4 を使わない場合は特殊なコメントアウトは一般的なコメントアウトと同じである.
 
 ## install
-TeX Live すでにインストールしているならばbemtemlate 使用に伴い, 特に追加のインストールは必要ない. 参考に TeX Live のインストールサイトを挙げる. 
+TeX Live すでにインストールしているならばbemtemlate 使用に伴い, 特に追加のインストールは必要ない. TeX Liveをインストールしていない場合は
 [TeX Live - Quick instal](https://tug.or/texlive/quickinstall.html)に従って TeX Liveをインストールする.
 
 ## Folder Structure
