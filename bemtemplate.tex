@@ -8,7 +8,11 @@
 %----------------------------------------------------------------------%
 \RequirePackage{plautopatch} %日本語パッケージを使う.
 \documentclass[aspectratio=169, 12pt]{beamer} %  8pt, 9pt, 10pt, 11pt, 12pt, 14pt, 17pt, 20pt
+<<<<<<< HEAD
 \usetheme{Madrid}% テーマは指定しなくともよい．
+=======
+\usetheme{Metropolis} % テーマは指定しなくともよい．
+>>>>>>> 79f6f10b5ebf1101feb00ff83b994c9002ae7768
 %**********************************************************************%
 % フォント
 %----------------------------------------------------------------------%
@@ -78,8 +82,95 @@
 \begin{frame}{整数式の割り算}
     %! 整数式の割り算, A割るBの商q, 余りrとすると, AイコールBQプラスR (Rの次数ショウナリBの次数かRイコール0)
     \begin{center}
+<<<<<<< HEAD
         $A \div B$の商$Q$, 余り$R$とすると, \par
         $A=BQ+R$\space ($R$の次数\space$<B$の次数\space か\space$R=0$)
+=======
+        $(\sqrt{a})^2=a$, $(-\sqrt{a})^2=a$, $\sqrt{a}\geq 0, \sqrt{a^2}=a$
+    \end{center}
+    $ a \leq 0 $ のとき \par
+    \begin{center}
+        $\sqrt{a^2}=-a$
+    \end{center}
+    $ a > 0$, $b>0$, $k>0$ のとき \par
+    \begin{eqnarray*}
+        \sqrt{a}\sqrt{b}&=&\sqrt{ab} \\
+        \frac{\sqrt{a}}{\sqrt{b}}&=&\sqrt{\frac{a}{b}} \\
+        \sqrt{k^2a}&=&k\sqrt{a}
+    \end{eqnarray*}
+\end{frame}
+%---------------------------------------------------------------
+\begin{frame}{2重根号のはずし方}
+    %! 2重根号のはずし方, 文字はすべて正の整数とする. ルートpプラスkルートqはルート括弧aプラスbプラスマイナスルート2abに変形し, ルート括弧aプラスbプラスルート2abイコールルートaプラスb, ルート括弧aプラスbプラスマイナスルート2abイコールルートaマイナスb
+    文字はすべて正の整数とする \par
+    $\sqrt{p+k\sqrt{q}}$ は$\sqrt{(a+b)\pm 2\sqrt{ab}}$に変形し, \par
+    \begin{eqnarray*}
+        \sqrt{(a+b)+2\sqrt{ab}}&=&\sqrt{a}+\sqrt{b} \\
+        \sqrt{(a+b)-2\sqrt{ab}}&=&\sqrt{a}-\sqrt{b}
+    \end{eqnarray*}
+\end{frame}
+%---------------------------------------------------------------
+\begin{frame}{不等式の性質}
+    %! 不等式の性質, aショウナリbならば, aプラスcショウナリbプラスc, aマイナスcショウナリｂマイナスc, aショウナリb, cダイナリゼロならばacショウナリbc, c分のaショウナリc分のb, aショウナリb, cショウナリゼロならばacダイナリbc, c分のaダイナリc分のb, aショウナリb, bショウナリcならばaショウナリc
+    \begin{eqnarray*}
+        a<b&ならば&a+c<b+c, a-c<b-c \\
+        a<b, c>0&ならば&ac<bc, \frac{a}{c}<\frac{b}{c} \\
+        a<b, c<0&ならば&ac>bc, \frac{a}{c}>\frac{b}{c} \\
+        a<b, b<c&ならば&a<c
+    \end{eqnarray*}
+\end{frame}
+%---------------------------------------------------------------
+\begin{frame}{絶対値を含む方程式, 不等式}
+    %! 絶対値を含む方程式, 不等式, 絶対値AイコールAただし Aがゼロ以下のとき, マイナスAただしAがゼロ未満のとき. 簡便法 cダイナリゼロのとき方程式, 絶対値xイコールcの解はxイコールプラスマイナスc, 絶対値xショウナリcの解はマイナスcショウナリxショウナリc, 絶対値xダイナリcの解はxショウナリマイナスc, cショウナリx
+    場合分け\par
+    \begin{eqnarray*}
+        |A|=
+        \begin{cases}
+            A (A\geq 0) \\
+            -A (A < 0)
+        \end{cases}
+    \end{eqnarray*}
+    簡便法 $c>0$のとき方程式 \par
+    \begin{eqnarray*}
+        |x|=c&の解は&x=\pm c \\
+        |x|<c&の解は&-c<x<c \\
+        |x|>c&の解は&x<-c, c<x
+    \end{eqnarray*}
+\end{frame}
+%---------------------------------------------------------------
+\begin{frame}{集合の基本}
+    %! 集合の基本, Uは全体集合でABCはUの部分集合とする. 部分集合とはAがBに含まれる, つまりxがAのげんならばxがBのげん. 相当とはAイコールB, つまりAがBに含まれて, かつ, BがAに含まれる. 共通部分はAキャップBイコールx, xがAのげん, かつ, xがBのげん. 和集合AカップBイコールx, xがAのげんか, または, xがBのげん. 補集合aバーイコールx, xがUのげん, かつxがAのげんではない.
+    $U$は全体集合で$A$, $B$, $C$は$U$の部分集合とする \par
+    部分集合 $A\subset B$ \par
+    \begin{center}
+        「$x \in A$ならば$x\in B$」が成り立つ\par
+    \end{center}
+    相当 $A=B$ \par
+    \begin{center}
+        「$A\subset B$かつ$B\subset A$」が成り立つ \par
+    \end{center}
+
+    共通部分 $A\cap B = \{x|x\in A かつ x \in B\}$ \par
+    和集合\space\space\space\space $A\cup B = \{x|x\in A または x \in B \}$ \par
+    補集合\space\space\space\space\space\space\space\space\space\space $\bar{A}=\{x|x\in U かつ x\notin A\}$
+\end{frame}
+%---------------------------------------------------------------
+\begin{frame}{ド・モルガンの法則}
+    %! ド・モルガンの法則, AカップBバーイコールAバーキャップBバー, AキャップBバーイコールAバーカップBバー, AカップBカップCバーイコールAバーキャップBバーキャップCバー, AキャップBキャップCイコールAバーカップBバーカップCバー
+    \begin{eqnarray*}
+        \overline{A\cup B}&=&\bar{A}\cap \bar{B} \\
+        \overline{A\cap B}&=&\bar{A}\cup \bar{B} \\
+        \overline{A\cup B\cup C}&=&\bar{A}\cap\bar{B}\cap\bar{C} \\
+        \overline{A\cap B\cap C}&=&\bar{A}\cup\bar{B}\cup\bar{C}
+    \end{eqnarray*}
+\end{frame}
+%---------------------------------------------------------------
+\begin{frame}{命題と条件}
+    %! 命題と条件, 真の場場合証明する. ぎの場合反例を挙げる.
+    \begin{center}
+        真の場合: 証明する \par
+        偽の場合: 反例を1つあげる
+>>>>>>> 79f6f10b5ebf1101feb00ff83b994c9002ae7768
     \end{center}
 \end{frame}
 %---------------------------------------------------------------
